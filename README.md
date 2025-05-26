@@ -34,7 +34,7 @@ In main.py, set the serial port name as per your system:
 			Ensure your Bluetooth device (e.g., phone, sensor) is paired and sending data to the correct serial port.
 
 5. Run the Application
-				python main.py
+				python threat.py
 
 
 📨 Message Format
