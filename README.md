@@ -62,20 +62,20 @@ Messages are flagged as spam or phishing if:
 
 🛠️ Components and Functionality
 🔄 Serial Bluetooth Reading
-		Continuously listens to the Bluetooth COM port and reads incoming messages in real-time.
+	Continuously listens to the Bluetooth COM port and reads incoming messages in real-time.
 📶 BLE Device Scanning
-		Uses the bleak library to detect nearby BLE devices and display their MAC addresses.
+	Uses the bleak library to detect nearby BLE devices and display their MAC addresses.
 
 
 🧠 Message Parsing
-			Parses incoming JSON or CSV messages and extracts key information: sender, subject, content.
+	Parses incoming JSON or CSV messages and extracts key information: sender, subject, content.
 
 
 🛡️ Threat Detection
 Compares message details with:
-		✅ Trusted sender list (trusted_senders)
-		🔒 Trusted domain list (trusted_domains)
-		⚠️ Suspicious keyword list (spam_keywords)
+	✅ Trusted sender list (trusted_senders)
+	🔒 Trusted domain list (trusted_domains)
+	⚠️ Suspicious keyword list (spam_keywords)
 
 
 ⛔ Blocking Mechanism
@@ -86,28 +86,28 @@ After showing a suspicious message, user is prompted to:
 
 📊 Visualization
 At the end of the session, a bar chart is displayed showing the number of:
-		Untrusted sender messages
-		Suspicious domain messages
-		Keyword-detected threats
+	Untrusted sender messages
+	Suspicious domain messages
+	Keyword-detected threats
 
  
- 🧭 How to Use the CLI
+🧭 How to Use the CLI
 While Running
-You can type the following commands:
-		ok – Review the latest message details
-		view blocked – Display all messages blocked
-		Ctrl + C – Exit the program
-On Suspicious Message
-		You'll be prompted:
+* You can type the following commands:
+	ok – Review the latest message details
+	view blocked – Display all messages blocked
+	Ctrl + C – Exit the program
+* On Suspicious Message
+	You'll be prompted:
 
 Do you want to block the sender/domain? (Yes/No)
 
 
 📊 Threat Categories Visualization
 The following categories are plotted in a bar chart:
-		Untrusted Senders
-		Suspicious Domains
-		Spam/Phishing Keywords
+	Untrusted Senders
+	Suspicious Domains
+	Spam/Phishing Keywords
 Example Chart:
 (A matplotlib chart appears when the script exits)
 
@@ -123,8 +123,8 @@ bluetooth-threat-detection/
 └── README.md              # Documentation
 
 🧾 Future Enhancements
-		🧭 Integrate with a smartwatch for real-world testing
-		🌍 Add online database support (e.g., Firebase or SQLite)
-		📲 Android app version for mobile notifications
-		🕵️‍♂️ Advanced ML-based message classification
-		🛜 Web dashboard for logs and reports
+	🧭 Integrate with a smartwatch for real-world testing
+	🌍 Add online database support (e.g., Firebase or SQLite)
+	📲 Android app version for mobile notifications
+	🕵️‍♂️ Advanced ML-based message classification
+	🛜 Web dashboard for logs and reports
